@@ -22,6 +22,7 @@ source $BP_DIR/lib/utils
 export_env_dir $ENV_DIR
 
 echo "Installing the dependencies"
+curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 apt_install libunwind8 gettext nodejs
 
 echo "Installing bower"
